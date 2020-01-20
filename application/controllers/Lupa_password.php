@@ -85,18 +85,22 @@
       public function send_email($param, $email) 
       {  
         $this->load->model('M_account');
-         $config = Array(  
-          'protocol' => 'smtp',  
+         $config = Array(
+          'protocol' => 'smtp',
+          //smtp google mail
           'smtp_host' => 'ssl://smtp.googlemail.com',  
-          'smtp_port' => 465,  
-          'smtp_user' => 'gmailandreams@gmail.com',   
-          'smtp_pass' => 'passwordgmailandreams',   
+          //port smtp google mail
+          'smtp_port' => 465,
+          //akun gmail
+          'smtp_user' => 'akun@gmail.com',   
+          //pasword akun gmail
+          'smtp_pass' => 'passwordGmail',   
           'mailtype' => 'html',   
           'charset' => 'iso-8859-1'  
        );  
        $this->load->library('email', $config);  
        $this->email->set_newline("\r\n");  
-       $this->email->from('andreams.clothing', 'Admin AI');   
+       $this->email->from('admins.informatika00', 'Admin AI');   
        $this->email->to($email);   
        $this->email->subject('Reset Password');   
        $this->email->message($param);  
