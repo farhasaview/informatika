@@ -85,8 +85,7 @@ CREATE TABLE `tbl_dosen` (
 --
 
 INSERT INTO `tbl_dosen` (`id_dosen`, `nama`, `nidn`, `password`) VALUES
-(1, 'IWAN RIZAL SETIAWAN', '0413067101', 'kudalumping'),
-(2, 'MOHAMMAD RIDWAN', '0417047201', '330b8d964c0b81954959fae0e1b31b56');
+(1, 'MOHAMMAD RIDWAN', '0417047201', '330b8d964c0b81954959fae0e1b31b56');
 
 -- --------------------------------------------------------
 
