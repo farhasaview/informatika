@@ -1,4 +1,4 @@
-<?php  //asfas
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin_materi extends CI_Controller {
